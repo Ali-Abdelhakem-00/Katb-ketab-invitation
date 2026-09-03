@@ -187,53 +187,60 @@ FALLING PETALS
 function createPetals() {
 
 
-const petals =
-    document.getElementById("petals");
+  const petals = document.getElementById("petals");
 
 
-/* PREVENT DUPLICATE PETALS */
+    /* Prevent duplicate petals */
 
-if (petals.children.length > 0) {
+    if (petals.children.length > 0) {
 
-    return;
+        return;
 
-}
-
-
-for (
-
-    let i = 0;
-
-    i < 25;
-
-    i++
-
-) {
+    }
 
 
-    const petal =
-        document.createElement("div");
+    for (let i = 0; i < 25; i++) {
 
 
-    petal.classList.add("petal");
+        /* Create image instead of div */
+
+        const petal = document.createElement("img");
 
 
-    petal.style.left =
-        Math.random() * 100 + "%";
+        /* Your uploaded petal image */
+
+        petal.src = "petal.png";
 
 
-    petal.style.animationDuration =
-        4 + Math.random() * 4 + "s";
+        petal.classList.add("petal");
 
 
-    petal.style.animationDelay =
-        Math.random() * 2 + "s";
+        /* Random horizontal position */
+
+        petal.style.left = Math.random() * 100 + "%";
 
 
-    petals.appendChild(petal);
+        /* Random size */
+
+        petal.style.width =
+            15 + Math.random() * 20 + "px";
 
 
-}
+        /* Random falling speed */
+
+        petal.style.animationDuration =
+            4 + Math.random() * 5 + "s";
+
+
+        /* Random delay */
+
+        petal.style.animationDelay =
+            Math.random() * 3 + "s";
+
+
+        petals.appendChild(petal);
+
+    }
 
 
 }
