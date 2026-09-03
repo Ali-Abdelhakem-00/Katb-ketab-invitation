@@ -116,25 +116,7 @@ document.getElementById("bgMusic");
 
 openBtn.addEventListener(
 
-
-"click",
-
-function (e) {
-
-
-    e.preventDefault();
-
-
-    /* PLAY MUSIC */
-
-    bgMusic.play()
-        .catch(() => {
-
-            console.log(
-                "Music needs user interaction."
-            );
-
-        });
+"click", function (e) { e.preventDefault(); /* PLAY MUSIC */ bgMusic.play() .catch(() => { console.log( "Music needs user interaction." ); }); /* CREATE FALLING PETALS */ createPetals(); /* HIDE HERO */ document .querySelector(".hero") .classList .add("hide"); setTimeout(() => { document .querySelector(".hero") .style .display = "none"; document .getElementById("invitation") .scrollIntoView({ behavior: "smooth" }); }, 1500); });
 
 
     /* HIDE HERO */
