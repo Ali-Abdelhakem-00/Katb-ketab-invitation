@@ -829,9 +829,9 @@ MOBILE DESIGN
 .quran-section,
 .hero {
 
-    min-height: 75svh;
+    min-height: 100svh;
 
-    padding: 40px 20px;
+    padding: 20px 10px;
 
 }
 
@@ -864,8 +864,8 @@ MOBILE DESIGN
 
 .rose-top-right {
 
-    top: 8px;
-    right: 8px;
+    top: 15px;
+    right: 15px;
 
 }
 
@@ -880,8 +880,8 @@ MOBILE DESIGN
 
 .rose-bottom-right {
 
-    bottom: 8px;
-    right: 8px;
+    bottom: 15px;
+    right: 15px;
 
 }
 
@@ -890,7 +890,7 @@ MOBILE DESIGN
 
 .quran-bismillah {
 
-    font-size: 34px;
+    font-size: 42px;
 
     margin-bottom: 25px;
 
@@ -985,7 +985,7 @@ MOBILE DESIGN
 
 .unique-date span {
 
-    font-size: 52px;
+    font-size: 42px;
 
 }
 
@@ -1022,7 +1022,7 @@ MOBILE DESIGN
 
 .location-details {
 
-    margin-bottom: 35px;
+    margin-bottom: 22px;
 
 }
 
@@ -1071,7 +1071,7 @@ MOBILE DESIGN
 
 .invitation-ending {
 
-    margin-top: 50px;
+    margin-top: 30px;
 
     padding-top: 30px;
 
