@@ -821,7 +821,7 @@ transform: scale(0.96);
 MOBILE DESIGN
 ========================================= */
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
 
 
 /* GENERAL */
@@ -829,9 +829,9 @@ MOBILE DESIGN
 .quran-section,
 .hero {
 
-    min-height: 200svh;
+    min-height: 75svh;
 
-    padding: 50px 30px;
+    padding: 40px 20px;
 
 }
 
