@@ -194,18 +194,21 @@ max-width: 1000px;
 
 font-family: "Aref Ruqaa", serif;
 
-font-size: clamp(32px, 5vw, 58px);
+font-size: clamp(28px, 7vw, 58px);
 
 font-weight: 700;
 
 direction: rtl;
+  
+text-align: center;
 
 color: var(--burgundy);
 
-margin-bottom: 45px;
+margin-bottom: 30px;
 
 line-height: 1.8;
-
+width: 100%;
+  padding:0 15px;
 
 }
 
@@ -892,9 +895,9 @@ MOBILE DESIGN
 
  font-size: 30px;
 
-    letter-spacing: 5px;
+    line-height: 2;
 
-    white-space: nowrap;
+    padding:0 10px;
 
 }
 
