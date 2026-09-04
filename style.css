@@ -890,9 +890,11 @@ MOBILE DESIGN
 
 .quran-bismillah {
 
-    font-size: 42px;
+ font-size: 30px;
 
-    margin-bottom: 25px;
+    line-height: 2;
+
+    white-space: nowrap;
 
 }
 
