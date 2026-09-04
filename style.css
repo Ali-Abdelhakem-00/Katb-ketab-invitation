@@ -868,7 +868,6 @@ MOBILE DESIGN
 
 
 .rose-top-right {
-    display: block;
     top: 12px;
     right: 10px;
 
@@ -877,7 +876,7 @@ MOBILE DESIGN
 
 .rose-bottom-left {
 
-    bottom: 15px;
+    bottom: 8px;
     left: 8px;
 
 }
@@ -885,7 +884,6 @@ MOBILE DESIGN
 
 .rose-bottom-right {
 
-     display: block;
     bottom: 12px;
     right: 10px;
     z-index: 5;
