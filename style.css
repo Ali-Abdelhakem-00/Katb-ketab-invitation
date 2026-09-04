@@ -824,14 +824,12 @@ MOBILE DESIGN
 @media (max-width: 600px) {
 
 
-.quran-section {
+/* GENERAL */
 
-    padding: 30px 20px;
-
-}
-
-
+.quran-section,
 .hero {
+
+    min-height: 100svh;
 
     padding: 30px 20px;
 
@@ -840,7 +838,7 @@ MOBILE DESIGN
 
 .invitation {
 
-    padding: 80px 20px;
+    padding: 70px 20px;
 
 }
 
@@ -849,7 +847,9 @@ MOBILE DESIGN
 
 .rose-decoration {
 
-    width: 110px;
+    width: 95px;
+
+    opacity: 0.9;
 
 }
 
@@ -857,10 +857,7 @@ MOBILE DESIGN
 .rose-top-left {
 
     top: 10px;
-
     left: 10px;
-
-
 
 }
 
@@ -868,10 +865,7 @@ MOBILE DESIGN
 .rose-top-right {
 
     top: 10px;
-
     right: 10px;
-
-
 
 }
 
@@ -879,10 +873,7 @@ MOBILE DESIGN
 .rose-bottom-left {
 
     bottom: 10px;
-
     left: 10px;
-
-
 
 }
 
@@ -890,9 +881,7 @@ MOBILE DESIGN
 .rose-bottom-right {
 
     bottom: 10px;
-
     right: 10px;
-
 
 }
 
@@ -901,23 +890,139 @@ MOBILE DESIGN
 
 .quran-bismillah {
 
+    font-size: 34px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.quran-verse {
+
+    font-size: 22px;
+
+    line-height: 1.9;
+
+}
+
+
+/* HERO */
+
+.invitation-intro {
+
+    font-size: 14px;
+
+}
+
+
+.couple-names {
+
+    font-size: 78px;
+
+}
+
+
+.couple-names span {
+
+    margin: 0 8px;
+
+}
+
+
+.hero-message {
+
+    font-size: 15px;
+
     margin-bottom: 30px;
 
 }
 
 
-/* NAMES */
+.btn {
 
-.couple-names {
+    padding: 13px 32px;
 
-    font-size: 80px;
+    font-size: 14px;
+
+}
+
+
+/* INVITATION */
+
+.section-title {
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
 
 }
 
 
 .invitation-names {
 
-    font-size: 70px;
+    font-size: 72px;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* EVENT DATE */
+
+.event-date {
+
+    font-size: 18px;
+
+}
+
+
+.unique-date {
+
+    gap: 8px;
+
+}
+
+
+.unique-date span {
+
+    font-size: 52px;
+
+}
+
+
+.unique-date .date-separator {
+
+    font-size: 22px;
+
+}
+
+
+.event-time {
+
+    font-size: 26px;
+
+}
+
+
+/* LOCATION */
+
+.venue-name {
+
+    font-size: 25px;
+
+}
+
+
+.venue-address {
+
+    font-size: 13px;
+
+}
+
+
+.location-details {
+
+    margin-bottom: 35px;
 
 }
 
@@ -926,131 +1031,68 @@ MOBILE DESIGN
 
 .countdown {
 
-    gap: 10px;
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 8px;
 
 }
 
 
 .box {
 
-    width: 70px;
+    width: 100%;
 
-    padding: 15px 5px;
+    padding: 15px 3px;
+
+    border-radius: 14px;
 
 }
 
 
 .box span {
 
-    font-size: 26px;
+    font-size: 24px;
 
 }
 
 
 .box small {
 
-    font-size: 10px;
+    font-size: 8px;
 
 }
 
 
-/* EVENT DETAILS */
+/* ENDING */
 
-.event-date {
+.invitation-ending {
 
-    font-size: 48px;
+    margin-top: 50px;
 
-}
-
-
-.venue-name {
-
-    font-size: 26px;
-
-}
-
-/* =========================================
-UNIQUE EVENT DATE
-========================================= */
-
-.event-details {
-margin-bottom: 35px;
-text-align: center;
-
-}
-
-.event-day {
-
-font-family: "Poppins", sans-serif;
-
-font-size: 25px;
-
-letter-spacing: 3px;
-
-color: var(--green);
-
-margin-bottom: 12px;
-
-
-}
-
-/* MAIN DATE */
-
-.unique-date {
-
-
-display: flex;
-
-justify-content: center;
-
-align-items: center;
-
-gap: 12px;
-
-margin-bottom: 12px;
-
-
-}
-
-.unique-date span {
-
-
-font-family: "Cormorant Garamond", serif;
-
-font-size: clamp(42px, 6vw, 70px);
-
-font-weight: 600;
-
-color: var(--burgundy);
-
-}
-
-/* DATE SEPARATORS */
-
-.unique-date .date-separator {
-
-font-size: 25px;
-
-color: var(--green);
+    padding-top: 30px;
 
 }
 
 
+.ending-message {
 
-/* EVENT TIME */
+    font-size: 23px;
 
-.event-time {
-
-font-family: "Cormorant Garamond", serif;
-
-font-size: 30px;
-
-font-style: italic;
-
-color: var(--burgundy-dark);
-
+    line-height: 1.8;
 
 }
 
+
+/* PETALS */
+
+.petal {
+
+    max-width: 25px;
+
+}
 
 }
