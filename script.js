@@ -12,7 +12,7 @@ COUNTDOWN
 
 function updateCountdown() {
 
-```
+ 
 const now = new Date().getTime();
 
 const distance = eventDate - now;
@@ -69,7 +69,7 @@ document.getElementById("minutes").textContent =
 
 document.getElementById("seconds").textContent =
     String(seconds).padStart(2, "0");
-```
+ 
 
 }
 
@@ -85,7 +85,7 @@ FALLING PETALS
 
 function createPetals() {
 
-```
+ 
 const petalsContainer =
     document.getElementById("petals");
 
@@ -140,7 +140,7 @@ for (let i = 0; i < 25; i++) {
     petalsContainer.appendChild(petal);
 
 }
-```
+ 
 
 }
 
@@ -158,7 +158,7 @@ openBtn.addEventListener(
 "click",
 function (e) {
 
-```
+ 
     e.preventDefault();
 
 
@@ -211,6 +211,6 @@ function (e) {
     }, 1500);
 
 }
-```
+ 
 
 );
