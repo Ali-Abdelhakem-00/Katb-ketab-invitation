@@ -834,7 +834,7 @@ MOBILE DESIGN
 
     min-height: 100svh;
 
-    padding: 20px 10px;
+    padding: 25px 15px;
 
 }
 
@@ -850,32 +850,34 @@ MOBILE DESIGN
 
 .rose-decoration {
 
-    width: 50px;
-
+    width: 75px;
+    height: auto;
     opacity: 0.9;
+    display: block;
+    z-index: 3;
 
 }
 
 
 .rose-top-left {
 
-    top: 10px;
+    top: 12px;
     left: 10px;
 
 }
 
 
 .rose-top-right {
-
-    top: 8px;
-    right: 8px;
+    display: block;
+    top: 12px;
+    right: 10px;
 
 }
 
 
 .rose-bottom-left {
 
-    bottom: 8px;
+    bottom: 15px;
     left: 8px;
 
 }
@@ -883,8 +885,10 @@ MOBILE DESIGN
 
 .rose-bottom-right {
 
-    bottom: 8px;
-    right: 8px;
+     display: block;
+    bottom: 12px;
+    right: 10px;
+    z-index: 5;
 
 }
 
@@ -976,8 +980,9 @@ MOBILE DESIGN
 
 .event-date {
 
-    font-size: 18px;
+   font-size: 17px;
 
+    letter-spacing: 2px;
 }
 
 
@@ -990,22 +995,26 @@ MOBILE DESIGN
 
 .unique-date span {
 
-    font-size: 28px;
+ font-size: 38px;
 
+    font-weight: 600;
 }
 
 
 .unique-date .date-separator {
 
-    font-size: 22px;
+    font-size: 20px;
 
 }
 
 
 .event-time {
 
-    font-size: 26px;
+ font-size: 24px;
 
+    font-style: italic;
+
+    margin-top: 8px;
 }
 
 
