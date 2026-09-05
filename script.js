@@ -50,7 +50,7 @@ setTimeout(() => {
 
     smoothScrollTo(
         heroSection,
-        5000
+        4000
     );
 
 }, 5000);
@@ -211,6 +211,27 @@ document.getElementById("openBtn");
 const bgMusic =
 document.getElementById("bgMusic");
 
+const musicBtn = document.getElementById("musicBtn");
+
+
+musicBtn.addEventListener("click", function () {
+
+    if (bgMusic.paused) {
+
+        bgMusic.play();
+
+        musicBtn.innerHTML = "🔊";
+
+    } else {
+
+        bgMusic.pause();
+
+        musicBtn.innerHTML = "🔇";
+
+    }
+
+});
+
 openBtn.addEventListener(
 "click",
 function (e) {
@@ -222,13 +243,17 @@ function (e) {
     /* PLAY MUSIC */
 
     bgMusic.play()
-        .catch(() => {
+        
+    .then(() => {
 
-            console.log(
-                "Music could not play."
-            );
+        musicBtn.innerHTML = "🔊";
 
-        });
+    })
+    .catch(() => {
+
+        console.log("Music could not play.");
+
+    });
 
 
     /* CREATE PETALS */
