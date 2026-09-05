@@ -50,7 +50,7 @@ setTimeout(() => {
 
     smoothScrollTo(
         heroSection,
-        2500
+        5000
     );
 
 }, 5000);
