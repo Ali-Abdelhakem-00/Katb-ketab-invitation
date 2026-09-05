@@ -1,11 +1,59 @@
+function smoothScrollTo(target, duration) {
+
+    const targetPosition = target.offsetTop;
+
+    const startPosition = window.pageYOffset;
+
+    const distance = targetPosition - startPosition;
+
+    const startTime = performance.now();
+
+
+    function animation(currentTime) {
+
+        const timeElapsed = currentTime - startTime;
+
+        const progress = Math.min(
+            timeElapsed / duration,
+            1
+        );
+
+
+        /* Smooth easing */
+
+        const ease =
+            1 - Math.pow(1 - progress, 4);
+
+
+        window.scrollTo(
+            0,
+            startPosition + distance * ease
+        );
+
+
+        if (progress < 1) {
+
+            requestAnimationFrame(animation);
+
+        }
+
+    }
+
+
+    requestAnimationFrame(animation);
+
+}
 setTimeout(() => {
 
-    document.getElementById("heroSection").scrollIntoView({
-        behavior: "smooth"
-    });
+    const heroSection =
+        document.getElementById("heroSection");
 
-}, 4000);
+    smoothScrollTo(
+        heroSection,
+        2500
+    );
 
+}, 5000);
 
 /* =========================================
 EVENT DATE
