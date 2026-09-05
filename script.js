@@ -1,3 +1,12 @@
+setTimeout(() => {
+
+    document.getElementById("heroSection").scrollIntoView({
+        behavior: "smooth"
+    });
+
+}, 4000);
+
+
 /* =========================================
 EVENT DATE
 ========================================= */
